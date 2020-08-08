@@ -1091,13 +1091,14 @@ h1 {
   margin-top: 5px;
   margin-left: auto;
   margin-right: 18.5px;
-  background-image: url(../img/plus.svg);
+  background: transparent url(../img/plus.png) no-repeat center center/contain;
+  background-image: url(../img/minus.svg);
   background-repeat: no-repeat;
 }
 
 .accordion-icon.is-open {
-  margin-top: 10px;
-  background-image: url(../img/minus.svg);
+  margin-top: 5px;
+  background-image: url(../img/plus.svg);
 }
 
 @media (max-width: 480px) {
@@ -1110,20 +1111,21 @@ h1 {
   display: none;
 }
 
-.accordion-body-in {
+.accordion-body {
+  display: none;
   display: flex;
   font-size: 18px;
   letter-spacing: 1px;
   margin: 24px 27px 18px 0;
 }
 
-.accordion-body-in h5 {
+.accordion-body h5 {
   font-size: 18px;
   margin: 2px 21px 0 22px;
 }
 
 @media (max-width: 480px) {
-  .accordion-body-in {
+  .accordion-body {
     font-size: 13px;
   }
 }

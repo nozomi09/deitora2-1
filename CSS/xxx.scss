@@ -1079,10 +1079,9 @@ header{
     font-size: $font-size-base;
     margin-top: 41px;
     margin-left: 40px;
+
     p{
         padding-right:86px;
-
-        
        }
 
        @include tab{
@@ -1206,12 +1205,12 @@ margin-bottom: 88px;
     margin-top: 5px;
     margin-left: auto;
     margin-right: 18.5px;
-    // background:transparent url(../img/plus.png) no-repeat center center / contain;
-    background-image: url(../img/plus.svg) ;
+    background:transparent url(../img/plus.png) no-repeat center center / contain;
+    background-image: url(../img/minus.svg) ;
     background-repeat: no-repeat;
     &.is-open{
-        margin-top: 10px;
-        background-image: url(../img/minus.svg);
+        margin-top: 5px;
+        background-image: url(../img/plus.svg);
     }
 
     @include sp{
@@ -1227,7 +1226,8 @@ margin-bottom: 88px;
 
 
 
-.accordion-body-in{
+.accordion-body{
+   display: none;
    display: flex;  
    font-size: 18px;
    letter-spacing: 1px;
